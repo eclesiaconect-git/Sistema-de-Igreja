@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F1E6;
+  color: #000000;
+}
+
+::selection {
+  background-color: #B8862E;
+  color: #F6F1E6;
+}
+
+/* Remove o realce azul padrão que aparece ao tocar em botões/links no celular */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 2px solid #2eb853;
+  outline-offset: 2px;
+}
